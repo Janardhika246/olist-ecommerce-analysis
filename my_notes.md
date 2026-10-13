@@ -68,4 +68,11 @@ database agree.
 ### What the charts show
 - Monthly revenue grew through 2017 and peaked around November 2017.
 - The line drops at the end because September 2018 has only a few days
-  of data. It is a data cut-off, not a
+  of data. It is a data cut-off, not a real fall in sales.
+- The top categories are health and beauty, watches and gifts, and
+  bed/bath/table.
+
+### What I learned
+- A slicer filters all the visuals on the page.
+- Checking dashboard numbers against SQL results helps me trust the
+  report.
