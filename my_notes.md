@@ -39,3 +39,33 @@ smoothly at checkout.
 Late orders scored 2.57 on average compared with 4.29 for on-time orders,
 a gap of 1.72 points, so late delivery strongly hurts customer satisfaction.
 
+## Power BI dashboard
+
+### Connecting and checking the data
+I connected Power BI to my MySQL database (olist_project) and loaded the
+6 tables. I checked the relationships in Model view. Each table links
+through order_id, customer_id or product_id.
+
+### Checking my numbers
+I created 4 measures (Total Revenue, Total Orders, Cancel Rate and
+Avg Review Score) and compared the cards with my SQL results.
+They matched: 13.59M revenue, 98,666 orders, 0.63% cancel rate and
+4.09 average review score. This shows that my dashboard and my
+database agree.
+
+### Problems I fixed
+- The Cancel Rate card showed 0.01, so I changed the measure format to
+  a percentage with 2 decimals.
+- The Total Orders card showed 99K, so I used a text measure with
+  FORMAT to show 98,666.
+- The line chart used Power BI's automatic date hierarchy, which
+  combined the same month from different years. I created a Year Month
+  column and used it on the X-axis, which gave one point per month,
+  like my SQL Query 2.
+- I clicked a drill-down button by mistake and it filtered my cards.
+  I learned to reset the drill and to avoid clicking the single arrow.
+
+### What the charts show
+- Monthly revenue grew through 2017 and peaked around November 2017.
+- The line drops at the end because September 2018 has only a few days
+  of data. It is a data cut-off, not a
