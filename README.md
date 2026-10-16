@@ -58,7 +58,7 @@ practise test design and execution.
 
 - 30 test cases covering login, logout, menu, dynamic catalog, cart,
   checkout, sorting and footer links
-- Result: [26] passed, [4] failed
+- Result: 26 passed, 4 failed
 - Failed tests are recorded in the test sheet with priority and screenshots
 
 See `qa/saucedemo/test_cases.xlsx`.
